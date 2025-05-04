@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+  /* scroll basico*/
   html{
     scroll-behavior: smooth;
   }
@@ -12,6 +13,9 @@
     font-family: 'Georgia', serif;
     background-color: #353535;
   }
+
+
+  /*Navbar*/
   /* Estilos del navbar */
   .navbar {
     position: fixed; /*estatica*/
@@ -31,7 +35,6 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-
   /* nombre estilizado */
   .name {
     color: #fff;
@@ -44,7 +47,6 @@
     display: flex;
     gap: 2rem;
   }
-  
   .nav-links li a {
     text-decoration: none;
     color: white;
@@ -55,6 +57,36 @@
   .nav-links li a:hover {
     color: #353535;
   }  
+  /*boton hamburguesa*/
+  .hamburger {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /*para dispositivos menores de 768 pixeles*/
+  @media (max-width: 768px) {
+    .name {
+      display: none;
+    }
+
+    .nav-links {
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+    }
+  }
+
+
+
+
   .home {
     padding-top: 80px;
     background: none;

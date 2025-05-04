@@ -29,3 +29,5 @@ function typeWriterLoop() {
 }
 
 document.addEventListener("DOMContentLoaded", typeWriterLoop);
+
+
