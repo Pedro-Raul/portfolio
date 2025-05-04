@@ -8,6 +8,11 @@
   html{
     scroll-behavior: smooth;
   }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
   /* Fondo general del body */
   body {
     font-family: 'Georgia', serif;
@@ -507,11 +512,6 @@
     .projects-content {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .project-card {
-      width: 90%;
-      padding: 1.5rem;
     }
   
     .projects-details {
